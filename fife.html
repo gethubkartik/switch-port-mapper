@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+
+  <style>
+    
+    /* .view {
+      padding-top: 12px;
+       position:sticky;
+      text-decoration: none;
+    }
+
+    .view a {
+      color: #222;
+      text-decoration: none;
+    }
+
+    .view a:hover {
+      color: #ecf0f1;
+      text-decoration: none;
+      background-color: #16a085;
+
+      font-family: sans-serif;
+      border: 0px solid black;
+      border-radius: 50px 50px 50px 50px;
+      margin: 1px;
+      padding: 8px;
+      font-weight: 500;
+    }
+
+    .view li a.active2 {
+      color: #ecf0f1;
+      text-decoration: none;
+      background-color: #16a085;
+
+      font-family: sans-serif;
+      border: 0px solid black;
+      border-radius: 50px 50px 50px 50px;
+      margin: 1px;
+      padding: 8px;
+      font-weight: 500;
+    }
+
+    .view ul {
+      list-style: none;
+      line-height: 2em;
+    }
+
+    .view ul summary {
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .view ul summary::marker {
+      display: none;
+    }
+
+    .view ul summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .view ul li {
+      position: relative;
+    }
+
+    .view ul li::before {
+      position: absolute;
+      left: -10px;
+      top: 0px;
+      border-left: 2px solid grey;
+      border-bottom: 2px solid grey;
+      content: "";
+      width: 8px;
+      height: 1em;
+    }
+
+    .view ul li::after {
+      position: absolute;
+      left: -10px;
+      bottom: 0px;
+      border-left: 2px solid grey;
+      content: "";
+      width: 8px;
+      height: 100%;
+    }
+
+    .view ul li:last-child::after {
+      display: none;
+    }
+
+    .view ul.tree > li:after,
+    ul.tree > li:before {
+      display: none;
+    }
+
+    .view ul summary::before {
+      position: absolute;
+      left: -1.25em;
+      top: 0.55em;
+      content: "+";
+      background-color: orange;
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50em;
+      z-index: 999;
+      text-align: center;
+      line-height: 0.8em;
+    }
+
+    .view ul details[open] > summary::before {
+      content: "-";
+    } */
+
+
+
+
+
+
+
+
+
+    body {
+     margin: 0;
+     padding: 0;
+ }
+
+ ul.navbar {
+     list-style-type: none;
+     margin: 0px;
+     padding: 10px;
+     overflow: hidden;
+     background-color: #1B2631;
+ }
+
+ ul.navbar li {
+     float: left;
+ }
+
+ ul.navbar li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 10px 46px;
+     text-decoration: none;
+     font-size: large;
+     font-weight: 500;
+ }
+
+ ul.navbar li a:hover {
+     background-color: #16a085;
+ }
+
+
+
+ #sidebar {
+     border: 2px solid whitesmoke;
+     width: 25%;
+     height: 590px;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ }
+
+
+
+
+
+
+ ul.sidebar-nav {
+     list-style-type: none;
+     margin: 0px;
+     padding: 10px;
+     overflow: hidden;
+     background-color: #1B2631;
+ }
+
+ ul.sidebar-nav li {
+     float: left;
+ }
+
+ ul.sidebar-nav li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 0px 46px;
+     text-decoration: none;
+     font-size: large;
+     font-weight: 300;
+ }
+
+ ul.sidebar-nav li a:hover {
+     background-color: #16a085;
+ }
+
+
+
+
+ #right-sidebar {
+     background-color: #ecf0f1;
+     height: 65px;
+     border: 0px solid black;
+     width: 74.8%;
+     color: #1B2631;
+     float: right;
+     margin-top: -590px;
+     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+ }
+
+ #right-sidebar .btn-group {
+     padding-right: 25px;
+     margin-top: 7px;
+
+     float: right;
+ }
+
+
+ #right-sidebar .btn-group button {
+     width: 150px;
+     color: whitesmoke;
+     font-weight: 500;
+     text-align: center;
+
+ }
+
+
+ #right-sidebar .btn-group1 {
+     padding-right: 35px;
+     margin-top: 7px;
+
+     float: right;
+ }
+
+
+ #right-sidebar .btn-group1 button {
+
+     width: 150px;
+     color: whitesmoke;
+     font-weight: 500;
+     text-align: center;
+
+ }
+
+
+
+
+
+
+
+
+ #right-sidebar1 {
+
+     height: 50px;
+
+     margin-top: 5px;
+     border: 0px solid black;
+     background-color: white;
+     width: 100%;
+     color: #1B2631;
+     float: right;
+
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+     padding-top: 5px;
+ }
+
+
+
+
+ #right-sidebar1 .header2 {
+     display: flex;
+
+     justify-content: space-between;
+     align-items: center;
+
+
+     z-index: 999;
+     position: sticky;
+     top: 0;
+     left: 0;
+ }
+
+ .navbar2 {
+     justify-content: center;
+     align-items: center;
+     display: flex;
+ }
+
+ .navbar2 li {
+     list-style: none;
+     padding: 0 10px;
+ }
+
+ .navbar2 li a {
+     text-decoration: none;
+     font-size: 15px;
+     color: #222;
+
+     font-weight: 500;
+     transition: 0.3s ease;
+ }
+
+ .navbar2 li a:hover {
+     color: #088178;
+ }
+
+ .navbar2 li a.active1 {
+     color: #088178;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * {
+     margin: 0px;
+     padding: 0;
+     font-family: Arial, Helvetica, sans-serif;
+
+ }
+
+
+ .heading {
+     display: flex;
+     background-color: white;
+
+     font-weight: 500;
+     padding-left: 20px;
+
+
+ }
+
+ h1 {
+     color: coral;
+     font-weight: bold;
+     background: transparent;
+     padding: 7px;
+
+ }
+
+
+ .outer-wrapper {
+     margin: 10px;
+     margin-left: 10px;
+     margin-right: 10px;
+
+     padding-top: 10PX;
+     max-width: fit-content;
+     max-height: fit-content;
+
+
+ }
+
+ .table-wrapper {
+
+     overflow-y: scroll;
+     overflow-x: scroll;
+     height: fit-content;
+     max-height: 96.4vh;
+
+     margin-top: 22px;
+
+     margin: 15px;
+     padding-bottom: 10px;
+
+ }
+
+
+ table {
+
+
+     min-width: max-content;
+     border-collapse: separate;
+     border-spacing: 0px;
+     width: 1200px;
+     height: 400px;
+     padding-top: 0px;
+ }
+
+
+
+ table th {
+     position: sticky;
+     top: 0px;
+
+     background-color: white;
+     color: #222;
+
+     font-weight: 800;
+     text-align: center;
+     font-weight: normal;
+     font-size: 13px;
+     outline: 0.7px solid black;
+     border: 1px solid #7f8c8d;
+
+ }
+
+
+
+
+
+
+
+ table th,
+ table td {
+
+
+     padding: 2px;
+     text-align: left;
+     border-bottom: 1px solid #ddd;
+
+ }
+
+
+ table td {
+
+     padding-left: 15px;
+     font-size: 15px;
+     border: 1px solid rgb(177, 177, 177);
+     padding-right: 100px;
+
+ }
+
+ #right-sidebar2 {
+     margin-top: 2px;
+     border: 0px solid black;
+     background-color: white;
+     width: 100%;
+     color: #1B2631;
+     float: right;
+     padding-top: 5px;
+ }
+.view{
+    padding-top: 12px;
+
+     text-decoration: none;
+}
+
+
+.view a{
+     color: #222;
+     text-decoration: none;
+}
+
+.view a:hover{
+     color: #ecf0f1;
+    text-decoration: none;
+      background-color: #16a085;
+ 
+      font-family: sans-serif;
+       border:0px solid black;
+        border-radius: 50px 50px 50px 50px;
+       margin:1px;
+       padding: 8px;
+        font-weight: 500;
+}
+
+
+
+
+
+
+.view li a.active2 {
+    
+    color: #ecf0f1;
+    text-decoration: none;
+      background-color: #16a085;
+ 
+      font-family: sans-serif;
+       border:0px solid black;
+        border-radius: 50px 50px 50px 50px;
+       margin:1px;
+       padding: 8px;
+        font-weight: 500;
+}
+
+ 
+
+
+
+
+
+
+ .view ul{
+     list-style: none;
+     line-height: 2em;
+      
+ }
+
+ .view ul summary {
+     cursor: pointer;
+     list-style: none;
+ }
+
+ .view ul summary::marker {
+     display: none;
+ }
+
+ .view ul summary::-webkit-details-marker {
+     display: none;
+ }
+
+ .view ul li {
+     position: relative;
+ }
+
+ .view ul li::before {
+     position: absolute;
+     left: -10px;
+     top: 0px;
+     border-left: 2px solid grey;
+     border-bottom: 2px solid grey;
+     content: "";
+     width: 8px;
+     height: 1em;
+ }
+
+ .view ul li::after {
+     position: absolute;
+     left: -10px;
+     bottom: 0px;
+     border-left: 2px solid grey;
+     content: "";
+     width: 8px;
+     height: 100%;
+
+ }
+
+ .view ul li:last-child::after {
+
+     display: none;
+ }
+
+ .view ul.tree>li:after,ul.tree>li:before {
+     display: none;
+ }
+
+ .view ul summary::before {
+     position: absolute;
+     left: -1.25em;
+     top: .55em;
+     content: "+";
+     background-color: orange;
+     display: block;
+     width: 15px;
+     height: 15px;
+     border-radius: 50em;
+     z-index: 999;
+     text-align: center;
+     line-height: .80em;
+
+
+ }
+
+ .view ul  details[open]>summary::before {
+     content: "-";
+ }
+
+
+
+
+
+
+
+
+
+  </style>
+  <body>
+    
+
+
+
+    <div class="container">
+                    <div id="loaddata">  
+
+
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      <div> 
+                        <ul class="navbar">
+                            
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">IP Address Manager</a></li>
+                            <li><a href="#">Switch Port Mapper</a></li>
+                            <li><a href="Rogue Detection">Home</a></li>
+                            <li><a href="#">Networking Tools</a></li>
+                            <li><a href="#">Alarms</a></li>
+                            <li><a href="#">Reports</a></li>
+                        </ul>
+                        <div id="sidebar">
+                            
+                            <ul class="sidebar-nav">
+                             
+                                <li><a href="#">Alarms</a></li>
+                                <li><a href="#">Reports</a></li>
+                            </ul>
+                         
+                    
+                    
+                    
+                    
+                    
+                        <div class="view"> 
+                        
+                            <ul class="tree">
+                                <li>
+                                    <details open >
+                                        <summary><a class="btn btn-success" id="btnclick"> click on it </a></summary>
+                                        <ul>
+                                            <li>
+                                                <details open>
+                                                    <summary><a href="#">First Tier</a></summary>
+                                                    <ul>
+                                                        <li><a href="#">First Item</a></li>
+                                                        <li>Second Item</li>
+                                                        <li>Another Here</li>
+                                                    </ul>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <details open>
+                                                    <summary>Third Tier</summary>
+                                                    <ul>
+                                                        <li>First Item</li>
+                                                        <li>Second Item</li>
+                                                        <li>Another Here</li>
+                                                    </ul>
+                                                </details>
+                                            </li>
+                                            <li>
+                                                <details open>
+                                                    <summary>Another Tier</summary>
+                                                    <ul>
+                                                        <li>First Item</li>
+                                                        <li>Second Item</li>
+                                                        <li>Another Here</li>
+                                                    </ul>
+                                                </details>
+                                            </li>
+                                        </ul>
+                                    </details>
+                                </li>
+                            </ul>
+                    
+                    </div>
+                    </div>
+                    <div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <div id="right-sidebar">
+                            
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                           Add
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                        </div>
+                      
+                        <div class="btn-group1">
+                      <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    
+                        Setting
+                     </button>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Action</a></li>
+                       <li><a class="dropdown-item" href="#">Another action</a></li>
+                       <li><a class="dropdown-item" href="#">Something else here</a></li>
+                       <li><hr class="dropdown-divider"></li>
+                       <li><a class="dropdown-item" href="#">Separated link</a></li>
+                     </ul>
+                    </div>
+                    
+                    
+                    
+                    
+                     
+                     
+                    <div id="right-sidebar1">
+                        <section class="header2"> 
+                         
+                        <ul class= "navbar2">
+                        <li><a   href="index.html">  Summery  </a></li>
+                        <li><a  class="active1" href="shop.html"> Switches</a></li>
+                        <li><a href="">  Ports     </a></li>
+                        <li><a href="">  Port History      </a></li>
+                        <li><a href="">  Alerts    </a></li>
+                        </ul>
+                        </section>
+                        </div>
+                    
+                    
+                    
+                    
+                    
+                      
+                    
+                        <div id="right-sidebar2">
+                            <div class="heading">
+                             
+                                <div> Switches</div>
+                        </div>
+                         
+                            <div class="outer-wrapper">
+                            <div class="table-wrapper">
+                            <table>
+                                 
+                                    <th>Col1 this is the longest title</th>
+                                    <th>Col2</th>
+                                    <th>Col3</th>
+                                    <th>Col4</th>
+                                    <th>Col5</th>
+                                    
+                                  
+                                    <tr class="one">
+                                        <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                                        <td><p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+                                        <td><span class="placeholder col-12 bg-danger"></span></td>
+                                        <td>Value 4</td>
+                                        <td>Value 5</td>
+                                         
+                                    </tr>
+                                   
+                                    <tr>
+                                        <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                                        <td> <p><a class="link-secondary  link-underline link-underline-opacity-0" href="#">0.00.008.880</a></p></td>
+                                        <td><span class="placeholder col-8 bg-danger"></span></td>
+                                        <td>Value 4</td>
+                                        <td>Value 5</td>
+                                         
+                                    </tr>
+                                    <tr>
+                                        <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                                        <td> <p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+                    
+                                        <td><span class="placeholder col-6 bg-danger"></span></td>
+                                        <td>Value 4</td>
+                                        <td>Value 5</td>
+                                     
+                                    </tr>
+                                    <tr>
+                                        <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                                        <td><p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+                    
+                                        <td><span class="placeholder" style="width: 100%;"></span></td>
+                                        <td>Value 4</td>
+                                        <td>Value 5</td>
+                                         
+                                    </tr>
+                                    <tr>
+                                        <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                                        <td><p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+                                        <td>Value 3</td>
+                                        <td>Value 4</td>
+                                        <td>Value 5</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                        <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                                        <td><p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+                                        <td>Value 3</td>
+                                        <td>Value 4</td>
+                                        <td>Value 5</td>
+                                         
+                                    </tr>
+                                    <tr>
+                                        <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                                        <td><p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+                                        <td>Value 3</td>
+                                        <td>Value 4</td>
+                                        <td>Value 5</td>
+                                         
+                                    </tr>
+                                    <tr>
+                                        <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                                        <td><p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+                                        <td>Value 3</td>
+                                        <td>Value 4</td>
+                                        <td>Value 5</td>
+                                        
+                                    </tr>
+                                   
+                         
+                            </table>
+                        </div>
+                        </div>
+                        </div>
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     
+                    
+                   
+                    </div>
+                    
+                    <script type="text/javascript">
+ 
+                    $(document).ready(function(){ $('#btnclick').click(function(){ 
+                      $('#loaddata').load('three.html') ;
+    
+                    })
+            
+                    });
+                    </script>
+
+ 
+
+
+ 
+  </body>
+</html>

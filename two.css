@@ -1,0 +1,377 @@
+ 
+       body {
+    margin: 0;
+    padding: 0;
+}
+        ul.navbar {
+            list-style-type: none;
+            margin: 0px;
+            padding: 10px;
+            overflow: hidden;
+            background-color: #1B2631;
+        }
+       
+        ul.navbar li {
+            float: left;
+        }
+        
+        ul.navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 46px;
+            text-decoration: none;
+            font-size:large;
+            font-weight: 500;
+        }
+        
+        ul.navbar li a:hover {
+            background-color:#16a085;
+        }
+
+
+
+        #sidebar{
+            border: 2px solid whitesmoke;
+            width: 25%;
+            height: 590px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+
+       
+
+
+
+        ul.sidebar-nav {
+            list-style-type: none;
+            margin: 0px;
+            padding: 10px;
+            overflow: hidden;
+            background-color: #1B2631;
+        }
+        
+        ul.sidebar-nav li {
+            float: left;
+        }
+        
+        ul.sidebar-nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 0px 46px;
+            text-decoration: none;
+            font-size:large;
+            font-weight: 300;
+        }
+        
+        ul.sidebar-nav li a:hover {
+            background-color:#16a085;
+        }
+
+
+
+
+        #right-sidebar{
+             background-color:#ecf0f1;
+             height: 65px;
+             border: 0px solid black; 
+            width: 74.8%;
+             color: #1B2631;
+            float: right;
+            margin-top: -590px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+        }
+         
+        #right-sidebar .btn-group{
+             padding-right:  25px;
+             margin-top:7px;
+               
+            float: right;
+        } 
+
+    
+        #right-sidebar .btn-group button{
+            width: 150px;
+            color:whitesmoke;
+             font-weight: 500;
+             text-align: center;
+ 
+} 
+
+ 
+#right-sidebar .btn-group1{       
+padding-right:  35px;
+margin-top:7px;
+  
+float: right;
+} 
+
+
+#right-sidebar .btn-group1 button{
+
+width: 150px;
+color:whitesmoke;
+font-weight: 500;
+text-align: center;
+
+} 
+
+
+
+
+
+
+ 
+
+#right-sidebar1{
+            
+            height: 50px;
+           
+             margin-top:5px;
+            border: 0px solid  black;
+             background-color:white;
+           width:100%;
+            color: #1B2631;
+           float: right;
+           
+           box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            padding-top: 5px;
+       }
+
+
+ 
+ 
+#right-sidebar1 .header2{
+  display: flex;
+   
+  justify-content: space-between;
+  align-items: center;
+  
+
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.navbar2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.navbar2 li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.navbar2 li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #222;
+
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.navbar2 li a:hover {
+  color: #088178;
+}
+.navbar2 li a.active1 {
+  color: #088178;
+}  
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+ 
+ 
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.heading {
+    display: flex;
+    background-color:white;
+     
+     font-weight: 500;
+     padding-left: 20px;
+   
+
+} 
+ h1 {
+    color: coral;
+    font-weight: bold;
+    background: transparent;
+    padding: 7px;
+     
+} 
+
+
+.outer-wrapper {
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-top: 10PX;
+    max-width: fit-content;
+    max-height: fit-content;
+
+
+} 
+ .table-wrapper {
+
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: fit-content;
+    max-height: 96.4vh;
+        
+    margin-top: 22px;
+
+    margin: 15px;
+    padding-bottom: 10px;
+
+} 
+
+
+ table {
+
+      
+    min-width: max-content;
+    border-collapse:separate;
+    border-spacing: 0px;    
+    width:1200px;
+     height:400px;
+      padding-top: 0px;
+} 
+
+
+
+ table th{
+    position: sticky; 
+    top: 0px;
+
+    background-color:white;
+    color:#222;
+
+    font-weight: 800;
+    text-align: center;
+    font-weight: normal;
+    font-size: 13px;
+    outline: 0.7px solid black;
+    border: 1px solid #7f8c8d;
+
+}  
+ 
+
+
+
+
+
+
+ table th, table td {
+
+     
+        padding: 2px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      
+}
+
+
+table td {
+    
+    padding-left:15px;
+    font-size: 15px;
+    border: 1px solid rgb(177, 177, 177);
+    padding-right: 100px;
+
+}
+#right-sidebar2{
+            
+         
+             margin-top:2px;
+            border: 0px solid  black;
+             background-color:white;
+           width:100%;
+            color: #1B2631;
+           float: right; 
+            padding-top: 5px;
+        }  
+        
+        ul{
+            list-style: none;
+            line-height: 2em;
+        }
+    
+    ul summary{
+        cursor: pointer;
+        list-style: none;
+    }
+    ul summary::marker{
+        display: none;
+    }
+    ul summary::-webkit-details-marker{
+        display: none;
+    }
+     ul li{
+        position: relative;
+     }
+    ul li::before{
+        position:  absolute;
+        left: -10px;
+        top: 0px;
+        border-left:  2px solid grey;
+        border-bottom: 2px solid grey;
+        content: "";
+        width: 8px;
+        height: 1em;
+    }
+    ul li::after{
+        position:  absolute;
+        left: -10px;
+        bottom: 0px;
+        border-left:  2px solid grey;
+        content: "";
+        width: 8px;
+        height: 100%;
+    
+    }
+    
+    ul li:last-child::after{
+    
+    display: none;
+    }
+    ul.tree > li:after,ul.tree > li:before{
+        display: none;
+    }
+    ul summary::before{
+        position:  absolute;
+        left: -1.25em;
+        top: .55em;
+        content: "+";
+        background-color: orange;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50em;
+        z-index: 999;
+        text-align: center;
+        line-height: .80em;
+    
+    
+    }
+    ul details[open] > summary::before{
+        content: "-";
+    }
+ 

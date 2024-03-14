@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+     
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" href= "two.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body> 
+
+
+
+ 
+      
+        <p id="demo">Here we load data</p> <button onclick="loadData()">Click</button>
+        <script>
+        function loadData() {
+         var xhttp = new XMLHttpRequest(); 
+         xhttp.onreadystatechange =function(){
+        if(this.readyState== 4 && this.status == 200){
+        document.getElementById("demo").innerHTML=this.responseText;
+         }
+        };
+        xhttp.open('GET', "three.html", true);
+        xhttp.send();
+    }
+
+        </script>
+         
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+     <div> 
+    <ul class="navbar">
+        
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">IP Address Manager</a></li>
+        <li><a href="#">Switch Port Mapper</a></li>
+        <li><a href="Rogue Detection">Home</a></li>
+        <li><a href="#">Networking Tools</a></li>
+        <li><a href="#">Alarms</a></li>
+        <li><a href="#">Reports</a></li>
+    </ul>
+    <div id="sidebar">
+        
+        <ul class="sidebar-nav">
+         
+            <li><a href="#">Alarms</a></li>
+            <li><a href="#">Reports</a></li>
+        </ul>
+     
+
+
+
+
+
+    <div id="view"> 
+    
+        <ul class="t">
+            <li>
+                <details open >
+                    <summary>First Item</summary>
+                    <ul>
+                        <li>
+                            <details open>
+                                <summary>First Tier</summary>
+                                <ul>
+                                    <li>First Item</li>
+                                    <li>Second Item</li>
+                                    <li>Another Here</li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details open>
+                                <summary>Third Tier</summary>
+                                <ul>
+                                    <li>First Item</li>
+                                    <li>Second Item</li>
+                                    <li>Another Here</li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details open>
+                                <summary>Another Tier</summary>
+                                <ul>
+                                    <li>First Item</li>
+                                    <li>Second Item</li>
+                                    <li>Another Here</li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div id="right-sidebar">
+        
+<div class="btn-group">
+    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+       Add
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+    </div>
+  
+    <div class="btn-group1">
+  <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+
+    Setting
+ </button>
+ <ul class="dropdown-menu">
+   <li><a class="dropdown-item" href="#">Action</a></li>
+   <li><a class="dropdown-item" href="#">Another action</a></li>
+   <li><a class="dropdown-item" href="#">Something else here</a></li>
+   <li><hr class="dropdown-divider"></li>
+   <li><a class="dropdown-item" href="#">Separated link</a></li>
+ </ul>
+</div>
+
+
+
+
+ 
+ 
+<div id="right-sidebar1">
+    <section class="header2"> 
+     
+    <ul class= "navbar2">
+    <li><a   href="index.html">  Summery  </a></li>
+    <li><a  class="active1" href="shop.html"> Switches</a></li>
+    <li><a href="">  Ports     </a></li>
+    <li><a href="">  Port History      </a></li>
+    <li><a href="">  Alerts    </a></li>
+    </ul>
+    </section>
+    </div>
+
+
+
+
+
+  
+
+    <div id="right-sidebar2">
+        <div class="heading">
+         
+            <div> Switches</div>
+    </div>
+     
+        <div class="outer-wrapper">
+        <div class="table-wrapper">
+        <table>
+             
+                <th>Col1 this is the longest title</th>
+                <th>Col2</th>
+                <th>Col3</th>
+                <th>Col4</th>
+                <th>Col5</th>
+                
+              
+                <tr class="one">
+                    <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                    <td><p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+                    <td><span class="placeholder col-12 bg-danger"></span></td>
+                    <td>Value 4</td>
+                    <td>Value 5</td>
+                     
+                </tr>
+               
+                <tr>
+                    <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                    <td> <p><a class="link-secondary  link-underline link-underline-opacity-0" href="#">0.00.008.880</a></p></td>
+                    <td><span class="placeholder col-8 bg-danger"></span></td>
+                    <td>Value 4</td>
+                    <td>Value 5</td>
+                     
+                </tr>
+                <tr>
+                    <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                    <td> <p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+
+                    <td><span class="placeholder col-6 bg-danger"></span></td>
+                    <td>Value 4</td>
+                    <td>Value 5</td>
+                 
+                </tr>
+                <tr>
+                    <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                    <td><p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+
+                    <td><span class="placeholder" style="width: 100%;"></span></td>
+                    <td>Value 4</td>
+                    <td>Value 5</td>
+                     
+                </tr>
+                <tr>
+                    <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                    <td><p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+                    <td>Value 3</td>
+                    <td>Value 4</td>
+                    <td>Value 5</td>
+                  
+                </tr>
+                <tr>
+                    <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                    <td><p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+                    <td>Value 3</td>
+                    <td>Value 4</td>
+                    <td>Value 5</td>
+                     
+                </tr>
+                <tr>
+                    <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                    <td><p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+                    <td>Value 3</td>
+                    <td>Value 4</td>
+                    <td>Value 5</td>
+                     
+                </tr>
+                <tr>
+                    <td><p><a class="link-opacity-100" href="#">Link opacity 100</a></p></td>
+                    <td><p><a class="link-secondary link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p></td>
+                    <td>Value 3</td>
+                    <td>Value 4</td>
+                    <td>Value 5</td>
+                    
+                </tr>
+               
+     
+        </table>
+    </div>
+    </div>
+    </div>
+
+
+
+
+</body>
+</html>
